@@ -1,12 +1,12 @@
 # react-native-tv-recommended-content
 
+> Publish content to the **Android TV / Google TV home screen** from your React Native app to the "Continue Watching" (Watch Next) row, and your own fully custom recommendation channels.
+
 [![npm version](https://img.shields.io/npm/v/react-native-tv-recommended-content)](https://www.npmjs.com/package/react-native-tv-recommended-content)
 ![Typescript](https://img.shields.io/badge/typescript-compatible-brightgreen)
 ![NPM Downloads](https://img.shields.io/npm/d18m/react-native-tv-recommended-content)
 [![license](https://img.shields.io/npm/l/react-native-tv-recommended-content)](./LICENSE)
 [![platform](https://img.shields.io/badge/platform-Android%20TV%20%7C%20Google%20TV-brightgreen)](#platform-support)
-
-Publish content to the **Android TV / Google TV home screen** from your React Native app — the "Continue Watching" (Watch Next) row, and your own fully custom recommendation channels — with zero native code required on your end.
 
 Built directly on top of `androidx.tvprovider` (`WatchNextProgram`, `PreviewProgram`, and `Channel`), fully typed, and safe to call from any platform — it no-ops gracefully on iOS, tvOS, and non-TV Android instead of crashing.
 
