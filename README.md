@@ -12,7 +12,7 @@ Built directly on top of `androidx.tvprovider` (`WatchNextProgram`, `PreviewProg
 
 ---
 
-## 📋 Table of Contents
+## <a id="table-of-content"></a> 📋 Table of Contents
 
 - [Platform Support](#platform-support)
 - [Installation](#installation)
@@ -23,17 +23,17 @@ Built directly on top of `androidx.tvprovider` (`WatchNextProgram`, `PreviewProg
   - [Channel Management](#channel-management)
   - [Programs Within a Channel](#programs-within-a-channel)
   - [Cross-cutting](#cross-cutting)
-- [Types](#types)
+- [Types and Enums](#types-and-Enums)
 - [Watch Next Quality Guidelines](#watch-next-quality-guidelines)
 - [Troubleshooting](#troubleshooting)
-- [Testing Locally](#testing-locally)
+- [Testing](#testing)
 - [Contributing](#contributing)
 - [License](#license)
 - [Support](#support)
 
 ---
 
-## 🖥️ Platform Support
+## <a id="platform-support"></a> 🖥️ Platform Support
 
 
 | Platform                | Behavior                                                                                                                                                                                                                                 |
@@ -46,7 +46,7 @@ You never need to branch your own code by platform — every method is safe to c
 
 ---
 
-## 📦 Installation
+## <a id="installation"></a> 📦 Installation
 
 ```sh
 npm install react-native-tv-recommended-content
@@ -58,7 +58,7 @@ No manual native linking or `AndroidManifest.xml` changes are required — autol
 
 ---
 
-## 🔧 Quick Start
+## <a id="quick-start"></a> 🔧 Quick Start
 
 ```ts
 import TVRecommendedContent, { ProgramType } from 'react-native-tv-recommended-content';
@@ -102,7 +102,7 @@ const removedCount = await remove('movie-456'); // removes from everywhere at on
 
 ---
 
-## ❤️ Core Concepts
+## <a id="core-concepts"></a> ❤️ Core Concepts
 
 1. **Watch Next** is a single, system-managed row ("Continue Watching") shared across all apps. You don't create it, you just publish/remove entries from it.
 2. **Channels** are rows *you* create and fully control (e.g. "New Releases", "Because You Watched X"). Each channel can hold many programs.
@@ -111,7 +111,7 @@ const removedCount = await remove('movie-456'); // removes from everywhere at on
 
 ---
 
-## 🔑️ API Reference
+## <a id="api-reference"></a> 🔑️ API Reference
 
 ### Watch Next
 
@@ -151,7 +151,7 @@ const removedCount = await remove('movie-456'); // removes from everywhere at on
 
 ---
 
-## ⚙️️ Types and Enums
+## <a id="types-and-enums"></a> ⚙️️ Types and Enums
 
 All types are exported from the package root: <br/>(`import { ProgramType, GenreType, ... } from 'react-native-tv-recommended-content'`).
 
@@ -175,7 +175,7 @@ All types are exported from the package root: <br/>(`import { ProgramType, Genre
 
 ---
 
-## 📜 Watch Next Quality Guidelines
+## <a id="watch-next-quality-guidelines"></a> 📜 Watch Next Quality Guidelines
 
 These aren't rules this library enforces for you — they're Google's own published guidelines for what belongs in Watch Next, worth building your calling logic around:
 
@@ -187,7 +187,7 @@ These aren't rules this library enforces for you — they're Google's own publis
 
 ---
 
-## 🔧 Troubleshooting
+## <a id="troubleshooting"></a> 🔧 Troubleshooting
 
 - **`"Unsupported class file major version NN"` during a Gradle build.**
   This is a JDK-vs-Gradle version mismatch, unrelated to this package — your system's active JDK is newer than the project's Gradle version supports. Point Gradle at an older JDK (17 is the safe default) via `org.gradle.java.home` in `android/gradle.properties`, rather than changing your system-wide `JAVA_HOME`.
@@ -212,7 +212,7 @@ Both are Android Gradle Plugin 9.0+ migration issues (its new built-in Kotlin su
 
 ---
 
-## 🧪 Testing
+## <a id="testing"></a> 🧪 Testing
 
 1. Clone the repo and run `yarn` at the root.
 2. `yarn example android` runs the included example app.
@@ -221,19 +221,19 @@ Both are Android Gradle Plugin 9.0+ migration issues (its new built-in Kotlin su
 
 ---
 
-## 🤝 Contributing
+## <a id="contributing"></a> 🤝 Contributing
 
 See [CONTRIBUTING.md](./CONTRIBUTING.md) and please follow the [Code of Conduct](./CODE_OF_CONDUCT.md).
 
 ---
 
-## 🔒 License
+## <a id="license"></a> 🔒 License
 
 Apache-2.0 © MadeByRaymond ([Daniel Obiekwe](https://github.com/MadeByRaymond))
 
 ---
 
-## ❤️ Support
+## <a id="support"></a> ❤️ Support
 
 If this package saved you from writing raw `androidx.tvprovider` Kotlin yourself, consider buying me a coffee:
 
