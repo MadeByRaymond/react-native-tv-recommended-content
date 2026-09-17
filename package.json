@@ -1,12 +1,12 @@
 {
   "name": "react-native-tv-recommended-content",
-  "version": "0.1.0",
-  "description": "Adding tv recommended contents to you android tv homescreen",
+  "version": "1.1.0",
+  "description": "Publish content to the Android TV / Google TV home screen from your React Native app to the \"Continue Watching\" (Watch Next) row, and your own fully custom recommendation channels",
   "main": "./lib/module/index.js",
   "types": "./lib/typescript/src/index.d.ts",
   "exports": {
     ".": {
-      "react-native-tv-recommended-content-source": "./src/index.tsx",
+      "react-native-tv-recommended-content-source": "./src/index.ts",
       "types": "./lib/typescript/src/index.d.ts",
       "default": "./lib/module/index.js"
     },
@@ -16,9 +16,7 @@
     "src",
     "lib",
     "android",
-    "ios",
     "cpp",
-    "*.podspec",
     "react-native.config.js",
     "!ios/build",
     "!android/build",
@@ -40,15 +38,13 @@
     "lint": "eslint \"**/*.{js,ts,tsx}\""
   },
   "keywords": [
-    "react-native",
-    "ios",
-    "android"
+    "react-native", "ios", "android", "android-tv", "watch-next", "google-tv"
   ],
   "repository": {
     "type": "git",
     "url": "git+https://github.com/MadeByRaymond/react-native-tv-recommended-content.git"
   },
-  "author": "Daniel Obiekwe <obiekwedanny@gmail.com> (https://github.com/MadeByRaymond)",
+  "author": "Daniel Obiekwe <madebyraymond@gmail.com> (https://github.com/MadeByRaymond)",
   "license": "MIT",
   "bugs": {
     "url": "https://github.com/MadeByRaymond/react-native-tv-recommended-content/issues"
@@ -103,14 +99,6 @@
         }
       ]
     ]
-  },
-  "codegenConfig": {
-    "name": "TvRecommendedContentSpec",
-    "type": "modules",
-    "jsSrcsDir": "src",
-    "android": {
-      "javaPackageName": "com.tvrecommendedcontent"
-    }
   },
   "release-it": {
     "git": {

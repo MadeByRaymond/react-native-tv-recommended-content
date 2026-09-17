@@ -26,6 +26,8 @@
     "skipLibCheck": true,
     "strict": true,
     "target": "ESNext",
-    "verbatimModuleSyntax": true
+    "verbatimModuleSyntax": true,
+    "sourceMap": false,
+    "inlineSourceMap": false
   }
 }
