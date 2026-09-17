@@ -45,7 +45,7 @@
     "url": "git+https://github.com/MadeByRaymond/react-native-tv-recommended-content.git"
   },
   "author": "Daniel Obiekwe <madebyraymond@gmail.com> (https://github.com/MadeByRaymond)",
-  "license": "MIT",
+  "license": "Apache-2.0",
   "bugs": {
     "url": "https://github.com/MadeByRaymond/react-native-tv-recommended-content/issues"
   },
